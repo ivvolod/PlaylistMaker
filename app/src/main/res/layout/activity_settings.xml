@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:theme="@style/Setting.Theme">
 
@@ -20,16 +21,19 @@
             style="@style/SwitchStyle"/>
 
         <TextView
+            android:id="@+id/txv_share"
             android:text="@string/Share"
-            android:drawableEnd="@drawable/share"
+            app:drawableEndCompat ="@drawable/share"
             style="@style/TextViewStyle"/>
         <TextView
+            android:id="@+id/txv_support"
             android:text="@string/Support"
-            android:drawableEnd="@drawable/support"
+            app:drawableEndCompat ="@drawable/support"
             style="@style/TextViewStyle"/>
         <TextView
+            android:id="@+id/txv_user_agreement"
             android:text="@string/User_Agreement"
-            android:drawableEnd="@drawable/arrow_forward"
+            app:drawableEndCompat ="@drawable/arrow_forward"
             style="@style/TextViewStyle"/>
     </LinearLayout>
 </LinearLayout>
