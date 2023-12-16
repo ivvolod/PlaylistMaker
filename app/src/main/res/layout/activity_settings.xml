@@ -23,17 +23,17 @@
         <TextView
             android:id="@+id/txv_share"
             android:text="@string/Share"
-            app:drawableEndCompat ="@drawable/share"
+            app:drawableEndCompat ="@drawable/ic_share"
             style="@style/TextViewStyle"/>
         <TextView
             android:id="@+id/txv_support"
             android:text="@string/Support"
-            app:drawableEndCompat ="@drawable/support"
+            app:drawableEndCompat ="@drawable/ic_support"
             style="@style/TextViewStyle"/>
         <TextView
             android:id="@+id/txv_user_agreement"
             android:text="@string/User_Agreement"
-            app:drawableEndCompat ="@drawable/arrow_forward"
+            app:drawableEndCompat ="@drawable/ic_arrow_forward"
             style="@style/TextViewStyle"/>
     </LinearLayout>
 </LinearLayout>

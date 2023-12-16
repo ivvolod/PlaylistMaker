@@ -2,7 +2,9 @@
 <resources>
     <dimen name="btn_radius">16dp</dimen>
     <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
     <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
     <dimen name="ico_padding">8dp</dimen>
     <dimen name="header_height">56dp</dimen>
     <dimen name="header_text_size">22sp</dimen>

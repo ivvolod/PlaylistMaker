@@ -20,17 +20,17 @@
         <Button
             android:id="@+id/btn_search"
             android:text="@string/Search"
-            app:icon="@drawable/search"
+            app:icon="@drawable/ic_search"
             style="@style/ButtonStyle"/>
         <Button
             android:id="@+id/btn_playlist"
             android:text="@string/Playlist"
-            app:icon="@drawable/library"
+            app:icon="@drawable/ic_library"
             style="@style/ButtonStyle"/>
         <Button
             android:id="@+id/btn_settings"
             android:text="@string/Settings"
-            app:icon="@drawable/settings"
+            app:icon="@drawable/ic_settings"
             style="@style/ButtonStyle"/>
     </LinearLayout>
 </LinearLayout>

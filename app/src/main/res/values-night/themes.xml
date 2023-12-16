@@ -11,4 +11,9 @@
          <item name="colorSwitchThumbNormal">@color/blue</item>
         <item name="trackTint">@color/blue_light</item>
     </style>
+    <style name="Search.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    </style>
 </resources>
