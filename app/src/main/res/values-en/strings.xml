@@ -11,4 +11,5 @@
     <string name="Support">Write to support</string>
     <string name="User_Agreement">User Agreement</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="search">Search</string>
 </resources>

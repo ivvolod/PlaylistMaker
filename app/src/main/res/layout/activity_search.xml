@@ -24,7 +24,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editText"
             style="@style/EditTextStyle"
-            android:hint="Поиск"/>
+            android:hint="@string/Search"/>
         <ImageButton
             android:id="@+id/clearButton"
             style="@style/ClearButtonStyle"
