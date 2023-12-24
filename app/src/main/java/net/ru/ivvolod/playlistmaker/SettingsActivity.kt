@@ -26,23 +26,29 @@ class SettingsActivity : AppCompatActivity() {
         btnShare.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
-            val shareMessage = "Проверьте курс по Андроид-разработке в Практикуме: https://practicum.yandex.ru/profile/android-developer/"
+            val shareMessage = getString(R.string.shareMessage)
+            val titleShareMessage = getString(R.string.titleShareMessage)
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
-            startActivity(Intent.createChooser(shareIntent, "Поделиться приложением"))
+            startActivity(Intent.createChooser(shareIntent, titleShareMessage))
         }
         //Реализация кнопки «Написать в поддержку»
         val btnSupport = findViewById<TextView>(R.id.txv_support)
         btnSupport.setOnClickListener {
             val supportIntent = Intent(Intent.ACTION_SENDTO)
-            supportIntent.data = Uri.parse("mailto:ivannikov.vladimir.v@yandex.ru")
-            supportIntent.putExtra(Intent.EXTRA_SUBJECT, "Сообщение разработчикам и разработчицам приложения Playlist Maker")
-            supportIntent.putExtra(Intent.EXTRA_TEXT, "Спасибо разработчикам и разработчицам за крутое приложение!")
-            startActivity(Intent.createChooser(supportIntent, "Написать в поддержку"))
+            val uriMailSupport = getString(R.string.uriMailSupport)
+            val mailTitle = getString(R.string.mailTitle)
+            val mailText = getString(R.string.mailText)
+            val titleSupport = getString(R.string.titleSupport)
+            supportIntent.data = Uri.parse(uriMailSupport)
+            supportIntent.putExtra(Intent.EXTRA_SUBJECT, mailTitle)
+            supportIntent.putExtra(Intent.EXTRA_TEXT, mailText)
+            startActivity(Intent.createChooser(supportIntent, titleSupport))
         }
         //Реализация кнопки «Пользовательское соглашение»
         val btnUserAgreement = findViewById<TextView>(R.id.txv_user_agreement)
         btnUserAgreement.setOnClickListener {
-            val userAgreementIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://yandex.ru/legal/practicum_offer/"))
+            val uriUserAgreement = getString(R.string.uriUserAgreement)
+            val userAgreementIntent = Intent(Intent.ACTION_VIEW, Uri.parse(uriUserAgreement))
             startActivity(userAgreementIntent)
         }
 

@@ -11,26 +11,26 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/SearchToolbar"
         style="@style/SearchToolbar" />
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:background="@drawable/rounded_corners"
-        android:layout_marginTop="@dimen/padding_8"
-        android:layout_marginBottom="@dimen/padding_8"
-        android:layout_marginStart="@dimen/text_size_16"
-        android:layout_marginEnd="@dimen/padding_16">
-        <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_size_16"
+        android:paddingTop="@dimen/padding_12"
+        android:paddingBottom="@dimen/padding_12"
+        >
+        <EditText
             android:id="@+id/editText"
             style="@style/EditTextStyle"
-            android:hint="@string/Search"/>
-        <ImageButton
-            android:id="@+id/clearButton"
-            style="@style/ClearButtonStyle"
-            app:endIconMode="clear_text"
-            android:visibility ="invisible"/>
+            android:hint="@string/Search"
+            app:endIconMode = "clear_text"/>
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/clearButton"
+            style="@style/ImageClearStyle"
+            android:visibility="gone">
+
+        </ImageView>
+
+    </FrameLayout>
 
 </LinearLayout>

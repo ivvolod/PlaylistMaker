@@ -11,5 +11,12 @@
     <string name="Support">Write to support</string>
     <string name="User_Agreement">User Agreement</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="shareMessage">Check out the Android development course in the Practicum: https://practicum.yandex.ru/profile/android-developer/</string>
     <string name="search">Search</string>
+    <string name="titleShareMessage">Share the app</string>
+    <string name="uriMailSupport">mailto:ivannikov.vladimir.v@yandex.ru</string>
+    <string name="mailTitle">Message to Playlist Maker app developers and contributors</string>
+    <string name="mailText">Thanks to the developers and devs for a cool app!</string>
+    <string name="titleSupport">Write to support</string>
+    <string name="uriUserAgreement">https://yandex.ru/legal/practicum_offer/</string>
 </resources>

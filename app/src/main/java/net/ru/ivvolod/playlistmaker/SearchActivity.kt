@@ -1,15 +1,18 @@
 package net.ru.ivvolod.playlistmaker
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
+import androidx.core.view.isVisible
 
 class SearchActivity : AppCompatActivity() {
     //Создание константных переменных для сохранения состояния
@@ -46,9 +49,9 @@ class SearchActivity : AppCompatActivity() {
 
                 // В процессе изменения текста
                 if (charSequence.isNullOrEmpty()) {
-                    clearButton.visibility = View.INVISIBLE
+                    clearButton.isVisible = false
                 } else {
-                    clearButton.visibility = View.VISIBLE
+                    clearButton.isVisible = true
                 }
             }
 
@@ -60,6 +63,7 @@ class SearchActivity : AppCompatActivity() {
         clearButton.setOnClickListener {
             searchEditText.text?.clear()
             clearButton.visibility = View.INVISIBLE
+            hideKeyboard()
         }
     }
     //Сохранние состояния
@@ -75,11 +79,17 @@ class SearchActivity : AppCompatActivity() {
         val restoredText = savedInstanceState.getString(SEARCH_TEXT_KEY)
 
         // Проверка на null
-        if (restoredText != null) {
-            searchText = restoredText
+        restoredText?.let {
+            searchText = it
             val searchEditText = findViewById<EditText>(R.id.editText)
             // Установка восстановленного текста в EditText
             searchEditText.setText(searchText)
         }
+    }
+
+    // Метод для скрытия клавиатуры
+    private fun hideKeyboard() {
+        val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 }
