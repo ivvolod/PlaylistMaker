@@ -4,11 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        
+        // Добавление тулбара
+        val toolbar: Toolbar = findViewById(R.id.MainToolbar)
+        setSupportActionBar(toolbar)
+        
         // Обработчик для кнопки "Поиск"
         val btnSearch = findViewById<Button>(R.id.btn_search)
         btnSearch.setOnClickListener {

@@ -17,9 +17,11 @@
             android:exported="false" />
         <activity
             android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
