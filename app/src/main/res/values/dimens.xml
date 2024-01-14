@@ -3,11 +3,15 @@
     <dimen name="btn_radius">16dp</dimen>
     <dimen name="padding_16">16dp</dimen>
     <dimen name="padding_14">14dp</dimen>
+    <dimen name="padding_13">13dp</dimen>
     <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
     <dimen name="padding_8">8dp</dimen>
     <dimen name="ico_padding">8dp</dimen>
     <dimen name="header_height">56dp</dimen>
     <dimen name="header_text_size">22sp</dimen>
     <dimen name="text_size_22">22sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="radius">5dp</dimen>
 </resources>
