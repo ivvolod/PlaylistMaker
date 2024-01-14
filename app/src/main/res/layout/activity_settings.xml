@@ -33,7 +33,7 @@
         <TextView
             android:id="@+id/txv_user_agreement"
             android:text="@string/User_Agreement"
-            app:drawableEndCompat ="@drawable/ic_arrow_forward"
+            app:drawableEndCompat ="@drawable/ic_arrow_forward_gray"
             style="@style/TextViewStyle"/>
     </LinearLayout>
 </LinearLayout>
